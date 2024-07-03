@@ -1,0 +1,9 @@
+#!/bin/bash
+# Write a script that uses an array to store a list of fruits. Loop through the array and print each fruit on a separate line.
+
+fruits=("Apple" "Banana" "Cherry" "Orange")
+
+for fruit in "${fruits[@]}"
+do
+    echo "$fruit"
+done

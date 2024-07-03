@@ -1,0 +1,5 @@
+#!/bin/bash
+# Create a script that asks the user for their name and then greets them using that name.
+echo "Enter your name, please!"
+read name
+echo "Hello, $name!"

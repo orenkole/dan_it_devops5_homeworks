@@ -1,0 +1,24 @@
+#!/bin/bash
+# Write a script that copies a file from one location to another. Both localtions should be passed as arguments
+
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 source_file destination"
+    exit 1
+fi
+
+source_file=$1
+destination_file=$2
+
+if [ ! -e "$source_file" ]; then
+    echo "The source file '$source_file' does not exist."
+    exit 1
+fi
+
+cp "$source_file" "$destination_file"
+
+if [ $? -eq 0 ]; then
+    echo "File '$source_file' copied to '$destination_file'."
+else
+    echo "Failed to copy '$source_file' to '$destination_file'."
+    exit 1
+fi

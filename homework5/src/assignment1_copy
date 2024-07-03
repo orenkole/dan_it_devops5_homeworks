@@ -1,0 +1,4 @@
+#!/bin/bash
+# Write a Bash script that simply echoes "Hello, World!" when executed.
+
+echo "Hello, World!"

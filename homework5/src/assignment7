@@ -1,0 +1,17 @@
+#!/bin/bash
+# Develop a script that accepts a filename as a command line argument and prints the number of lines in that file.
+
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 filename"
+    exit 1
+fi
+
+filename=$1
+
+if [ ! -e "$filename" ]; then
+    echo "File '$filename' does not exist"
+    exit 1
+fi
+
+line_count=$(wc -l < "$filename")
+echo "The file '$filename' has $line_count lines"
