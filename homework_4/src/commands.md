@@ -15,7 +15,8 @@ _change_host.sh_
 #!/bin/bash
 sudo hostnamectl set-hostname ubuntu22
 ```
-`sudo chown bob:bob /home/bob/change_hostname.sh`
+`sudo chown bob:bob /home/bob/change_hostname.sh`  
+
 `sudo chmod 700 /home/bob/change_hostname.sh`
 
 ## Run the script. Reboot the system. Log into the system as the "bob" user.
@@ -24,14 +25,17 @@ sudo hostnamectl set-hostname ubuntu22
 ![add bob](../screens/3.png)
 
 ## Install "nginx". Check if nginx is running, also use netstat to see which ports are open.
-`sudo apt update`
-`sudo apt install -y nginx`
-`sudo systemctl start nginx`
-`sudo systemctl status nginx`
+`sudo apt update`  
+`sudo apt install -y nginx`  <br>
+
+`sudo systemctl start nginx`  <br>
+
+`sudo systemctl status nginx`  <br>
 
 ![add bob](../screens/4.png)
 
-`sudo apt install -y net-tools`
+`sudo apt install -y net-tools`  
+
 `netstat -tln`
 
 ![add bob](../screens/5.png)
