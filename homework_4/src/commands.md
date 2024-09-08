@@ -15,7 +15,7 @@ _change_host.sh_
 #!/bin/bash
 sudo hostnamectl set-hostname ubuntu22
 ```
-`sudo chown bob:bob /home/bob/change_hostname.sh`  
+`sudo chown bob:bob /home/bob/change_hostname.sh`  <br>
 
 `sudo chmod 700 /home/bob/change_hostname.sh`
 
@@ -34,7 +34,7 @@ sudo hostnamectl set-hostname ubuntu22
 
 ![add bob](../screens/4.png)
 
-`sudo apt install -y net-tools`  
+`sudo apt install -y net-tools`  <br>
 
 `netstat -tln`
 
